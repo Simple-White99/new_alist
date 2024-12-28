@@ -19,17 +19,6 @@ function loadStylesAndFooter() {
             document.head.appendChild(style);
         });
 
-    // 加载自定义 Footer
-    fetch('https://fastly.jsdelivr.net/gh/Yinhono/beautify-alist@latest/page.html')
-        .then(response => response.text())
-        .then(data => {
-            const footer = document.getElementById('custom-footer');
-            if (footer) {
-                footer.innerHTML = data;
-            }
-        });
-}
-
 // 延迟加载检查
 let interval = setInterval(() => {
     if (document.querySelector(".footer")) {
