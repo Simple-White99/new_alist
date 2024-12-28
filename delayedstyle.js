@@ -11,7 +11,7 @@ function loadStylesAndFooter() {
     document.head.appendChild(googleFonts2);
 
     // 加载主CSS样式
-    fetch('https://fastly.jsdelivr.net/gh/Simple-White99/new_alist/aliststyle.css')
+    fetch('https://fastly.jsdelivr.net/gh/Simple-White99/new_alist@lastest/aliststyle.css')
         .then(response => response.text())
         .then(css => {
             const style = document.createElement('style');
